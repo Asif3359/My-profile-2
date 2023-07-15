@@ -1,0 +1,307 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Courier New', Courier, monospace;
+}
+/* .body-1{
+    display: grid;
+    gap: 5px;
+    grid-template-areas: 
+    "header-1 header-1 header-1" */
+     /* "navigation-1 navigation-1 navigation-1"
+     "banner-1 banner-1 banner-1" */
+     /* "main-1 main-1 main-1"
+     "footer-1 footer-1 footer-1"
+    ;
+    height: fit-content;
+ } */
+.header-1{
+    grid-area: header-1;
+    width:auto;
+    height: fit-content;
+    /* position: relative; */
+    
+}
+.navigation-1{
+    grid-area: navigation-1;
+}
+.banner-1{
+    grid-area: banner-1;
+   
+}
+.main-1{
+    grid-area: main-1;
+    
+  
+}
+.footer-1{
+    grid-area:footer-1;
+   
+   
+}
+.logo{
+    width: 70px;
+    /* padding: 10px; */
+}
+.header-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction:row-reverse;
+    background-color: rgba(7, 109, 19, 0.882);
+    position: sticky;
+    top: 0px;
+}
+.nav-ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    
+}
+.nav-li{
+    list-style: none;
+}
+.nav-a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    
+}
+.nav-a:hover{
+  background-color: rgba(7, 101, 20, 0.825);
+}
+
+.banner-1{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:20px 100px;
+    border: 1px solid rgba(0, 128, 0, 0.662);
+    height: 100vh;
+}
+.banner-image{
+    width: 400px;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 100px;
+}
+.banner-paragraph{
+    font-size: 24px;
+    padding: 5px;
+}
+.banner-title-2{
+    padding: 5px;
+    font-size: 30px;
+}
+.banner-title{
+    font-size: 70px;
+    padding: 5px;
+}
+.prymary{
+    background-color: green;
+    padding: 10px 15px;
+    margin-left: 5px;
+    color: white;
+    border-radius: 5px;
+}
+.span-item{
+    color: green;
+}
+.about-me-1{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:50px 100px;
+    border: 1px solid rgba(0, 128, 0, 0.662);
+}
+.about-me-image{
+    width: 400px;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 100px;
+}
+.about-me-title{
+    font-size: 70px;
+    padding: 10px;
+}
+.about-me-paragraph{
+    font-size: 24px;
+    padding: 10px;
+}
+.my-skills-logo{
+    width: 100px;
+    border-radius: 50px;
+    border: 1px solid gray;
+}
+.what-i-do{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding:20px 100px;
+    border: 1px solid rgba(0, 128, 0, 0.662);
+}
+.what-i-do-skill{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 50px;
+}
+.my-skills{
+    border: 1px solid gray;
+    padding: 30px 20px ;
+    text-align: center;
+    background-color: rgba(223, 223, 223, 0.359);
+}
+.what-i-do-content{
+    padding:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.what-i-do-title{
+    font-size: 40px;
+    padding: 10px;
+}
+.what-i-do-paragraph{
+    font-size: 24px;
+    padding: 10px;
+    text-align: center;
+}
+.my-skills-button{
+    margin-left: 0px;
+    margin-top: 10px;
+}
+.my-skills-title{
+    padding: 10px;
+    font-size: 25px;
+}
+.my-skills-paragraph{
+    padding: 10px;
+}
+
+@media screen and (min-width:715px) and (max-width:920px){
+   
+    .banner-image{
+        width: 300px;
+    }
+    .banner-1{
+        height: auto;
+        padding:10px 50px;
+    }
+    .about-me-image{
+        width: 300px;
+    }
+    .what-i-do,
+    .about-me-1{
+        padding: 10px 50px;
+    }
+    .what-i-do-skill{
+       
+        padding: 25px;
+    }
+    
+
+   
+}
+@media screen and (min-width:567px) and (max-width:725px){
+    .banner-1{
+        flex-direction: column;
+        padding: 10px;
+        height: auto;
+    }
+    .about-me-1{
+        flex-direction: column;
+        padding: 10px;
+    }
+    .what-i-do-skill{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .what-i-do{
+        padding: 10px;
+    }
+
+}
+
+@media screen and (max-width:567px){
+    .header-content {
+        flex-direction: column;
+        justify-content: left;
+        align-items: flex-start;
+    }
+    .logo{
+        padding: 0px;
+    }
+    .banner-1{
+        flex-direction: column;
+        padding: 20px;
+        height: auto;
+    }
+    .about-me-1{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .nav-a{
+        padding: 10px;
+    }
+    .banner-image{
+        width: 280px;
+    }
+    .about-me-image{
+        width: 280px;
+    }
+    .what-i-do-skill{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding: 10px;
+    }
+    .what-i-do{
+        padding: 10px;
+    }
+    .what-i-do-content{
+        padding: 5px;
+    }
+   
+}
+@media screen and (max-width:392px){
+    .nav-a{
+        font-size: 14px;
+        padding: 8px;
+    }
+    .banner-image{
+        width: 250px;
+    }
+    .about-me-image{
+        width: 250px;
+    }
+    .banner-1{
+        padding: 20px;
+    }
+    .about-me-1{
+        padding: 20px;
+    }
+}
+@media screen and (max-width:282px){
+    .nav-a{
+        font-size: 12px;
+        padding: 6px;
+    }
+    .banner-image{
+        width: 200px;
+    }
+    .about-me-image{
+        width: 200px;
+    }
+    .banner-1{
+        padding:10px;
+    }
+    .about-me-1{
+        padding: 10px;
+    }
+}
