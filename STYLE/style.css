@@ -20,6 +20,8 @@
     width:auto;
     height: fit-content;
     /* position: relative; */
+    position: relative;
+    
     
 }
 .navigation-1{
@@ -48,9 +50,10 @@
     align-items: center;
     justify-content: space-around;
     flex-direction:row-reverse;
-    background-color: rgba(7, 109, 19, 0.882);
+    background-color: rgb(7, 109, 19);
     position: sticky;
     top: 0px;
+    z-index: 1;
 }
 .nav-ul{
     display: flex;
@@ -72,19 +75,36 @@
 .nav-a:hover{
   background-color: rgba(7, 101, 20, 0.825);
 }
-
+.banner-section{
+    /* background-color: aqua; */
+    background-image: linear-gradient( rgba(33, 33, 33, 0.614),  rgba(124, 124, 124, 0.926), rgba(33, 33, 33, 0.614)),url("../IMAGE/A2.png");
+    background-position: center;
+    background-size:contain;
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    color: rgb(0, 0, 0);
+    z-index: 0;
+}
 .banner-1{
     display: flex;
     justify-content:space-between;
     align-items: center;
-    padding:20px 100px;
+    padding:100px 100px;
     border: 1px solid rgba(0, 128, 0, 0.662);
-    height: 100vh;
+    height: auto;
+    gap: 40px;
+    /* background-color: rgba(0, 41, 1, 0.492); */
+     background-color: rgba(255, 255, 255, 0.567);
+   
+}
+.banner-photo{
+    background-color: rgba(48, 48, 48, 0.567);
+    border-radius: 100px;
+    border: 1px solid gray;
 }
 .banner-image{
     width: 400px;
     padding: 20px;
-    border: 1px solid gray;
     border-radius: 100px;
 }
 .banner-paragraph{
@@ -115,6 +135,7 @@
     align-items: center;
     padding:50px 100px;
     border: 1px solid rgba(0, 128, 0, 0.662);
+    gap: 40px;
 }
 .about-me-image{
     width: 400px;
